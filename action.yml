@@ -1,0 +1,6 @@
+# action.yml
+name: 'ensl-plugin'
+description: 'build ensl plugin'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

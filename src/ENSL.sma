@@ -512,8 +512,8 @@ public plugin_init()
 	register_clcmd("say_team ready", "cmd_ready")
 	register_clcmd("say notready", "cmd_notready")
 	register_clcmd("say_team notready", "cmd_notready")
-	register_clcmd("say /clearwp", "cmd_clearwp");
-	register_clcmd("say_team /clearwp", "cmd_clearwp");
+	//register_clcmd("say /clearwp", "cmd_clearwp");
+	//register_clcmd("say_team /clearwp", "cmd_clearwp");
 	register_clcmd("say /noweapons", "func_cmd_stripweapons");
 	
 	// Console commands
@@ -537,8 +537,8 @@ public plugin_init()
 	register_concmd("amx_enslhelp", "cmd_enslhelp", ADMIN_USER, "(Show help about ENSL Plugin commands)")
 	register_concmd("amx_enslcvars", "cmd_enslcvars", ADMIN_USER, "(Show help about ENSL Plugin CVARs)")
 	
-	// Impulset
-	register_impulse(81, "cmd_clearwp");
+	//// Impulset
+	//register_impulse(81, "cmd_clearwp");
 	
 	// Special
 	register_clcmd("pauseMark", "cmd_pause")
@@ -4224,6 +4224,7 @@ public func_read_web(&websocket, mark[W_LEN_MARK + 1], lines, data[][W_LEN_LINE 
  * Waypoint fix by Asmodee
  **************************************************************************************/
 
+/* Fixed in NS3.3
 public func_init_waypoints()
 {
 	for ( new i = 0; i <= g_maxPlayers; i++ )
@@ -4268,6 +4269,7 @@ public cmd_clearwp(id)
 	}
 	return PLUGIN_HANDLED;
 }
+*/
 
 
 /**************************************************************************************
