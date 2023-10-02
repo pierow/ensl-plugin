@@ -4224,7 +4224,7 @@ public func_read_web(&websocket, mark[W_LEN_MARK + 1], lines, data[][W_LEN_LINE 
  * Waypoint fix by Asmodee
  **************************************************************************************/
 
-/* Fixed in NS3.3
+
 public func_init_waypoints()
 {
 	for ( new i = 0; i <= g_maxPlayers; i++ )
@@ -4240,6 +4240,7 @@ public func_msg_waypoint()
 	return PLUGIN_CONTINUE;
 }
 
+/* Fixed in NS3.3
 public cmd_clearwp(id)
 {
 	if ( pev(id, pev_team) == 1 )
