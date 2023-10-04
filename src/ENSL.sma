@@ -451,7 +451,7 @@ public plugin_init()
 	
 	// Register CVARs
 	g_cvar_minrate = register_cvar("ensl_minrate", "10000")
-	g_cvar_maxrate = register_cvar("ensl_maxrate", "25000")	
+	g_cvar_maxrate = register_cvar("ensl_maxrate", "50000")	
 	g_cvar_mincmdrate = register_cvar("ensl_mincmdrate", "50")
 	g_cvar_maxcmdrate = register_cvar("ensl_maxcmdrate", "150")
 	g_cvar_minupdaterate = register_cvar("ensl_minupdaterate", "40")
