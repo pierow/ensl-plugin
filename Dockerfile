@@ -43,9 +43,9 @@ WORKDIR /home/amxx/build/base/addons/amxmodx/scripting
 
 RUN mkdir -p /home/amxx/build/pkg/addons/amxmodx/plugins && \
     mkdir -p /home/amxx/build/pkg/addons/amxmodx/modules && \
-    ./amxxpc ENSL.sma && \
-    ./amxxpc extralevels3.sma && \
-    ./amxxpc hiveccstatus.sma && \
+    ./amxxpc /home/amxx/build/base/addons/amxmodx/scripting/ENSL.sma && \
+    ./amxxpc /home/amxx/build/base/addons/amxmodx/scripting/extralevels3.sma && \
+    ./amxxpc /home/amxx/build/base/addons/amxmodx/scripting/hiveccstatus.sma && \
     cp *.amxx /home/amxx/build/base/addons/amxmodx/plugins/ && \
     cp *.amxx /home/amxx/build
 
