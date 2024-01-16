@@ -3254,7 +3254,7 @@ public func_init_co()
 	
 	register_event("WeapPickup", "evolve_lerk", "b", "1=6")
 
-	callback = 	
+	new callback = 	
 	cvarhook:hook_cvar_change(pcvar, const callback[]);
 	
 	// Normal combat
