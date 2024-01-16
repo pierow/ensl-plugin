@@ -3254,8 +3254,9 @@ public func_init_co()
 	
 	register_event("WeapPickup", "evolve_lerk", "b", "1=6")
 
-	new callback = 	
-	cvarhook:hook_cvar_change(pcvar, const callback[]);
+	////2024 - compile error here
+	//callback = 	
+	//cvarhook:hook_cvar_change(pcvar, const callback[]);
 	
 	// Normal combat
 	g_coNum[CO_NORMAL] = 0
