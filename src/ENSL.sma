@@ -477,7 +477,7 @@ public plugin_init()
 	// Register scoreboard event for icons
 	register_message(g_msgId_Scoreboard, "event_scoreboard")
 	register_message(g_msgId_Waypoint, "func_msg_waypoint");
-	register_message(g_msgId_DeathMsg, "func_msg_death");
+	//register_message(g_msgId_DeathMsg, "func_msg_death");
 	
 	// Register team joins
 	register_clcmd("jointeamone", "cmd_jointeamone")
