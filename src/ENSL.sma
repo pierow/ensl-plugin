@@ -383,7 +383,7 @@ new g_webDataLine[W_NUM_FUNCS]					// Function ID <-> data line pointer
 new g_msgId_SayText						// MsgID: SayText
 new g_msgId_Scoreboard						// MsgID: Scoreboard
 new g_msgId_Waypoint						// MsgID: Waypoint
-new g_msgId_DeathMsg = 0;					// MsgID: Death
+//new g_msgId_DeathMsg = 0;					// MsgID: Death
 
 new g_maxPlayers = 0;						// Maxplayers
 new g_mapBootMins = 0						// Map boot cycles
@@ -444,7 +444,7 @@ public plugin_init()
 	g_msgId_SayText = get_user_msgid("SayText")
 	g_msgId_Scoreboard = get_user_msgid("ScoreInfo")
 	g_msgId_Waypoint = get_user_msgid("SetOrder")
-	g_msgId_DeathMsg = get_user_msgid("DeathMsg")
+	//g_msgId_DeathMsg = get_user_msgid("DeathMsg")
 	
 	// Globals
 	g_maxPlayers = get_maxplayers();
@@ -2480,7 +2480,8 @@ stock func_add_flt_cvar(name[C_LEN_NAME + 1], Float:official = 0.0,  Float:pcw =
 	g_cvarFltPCW[g_cvarFltIndex] = pcw != -1.0 ? pcw : official
 	g_cvarFltGather[g_cvarFltIndex] = gather != -1.0 ? gather : official
 	g_cvarFltPublic[g_cvarFltIndex] = publik != -1.0 ? publik : official
-	g_cvarFltLevel[g_cvarFltIndex] = official
+	//g_cvarFltLevel[g_cvarFltIndex] = official
+	g_cvarFltLevel[g_cvarFltIndex] = level
 	g_cvarFltIndex++
 	
 	return g_cvarFltIndex - 1
